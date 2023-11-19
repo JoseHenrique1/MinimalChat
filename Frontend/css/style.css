@@ -1,0 +1,117 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/**/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background-color: lightblue;
+}
+
+/* Mensagens */
+.templateChat {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 8;
+}
+.box-msgs {
+    flex-grow: 1;
+    width: auto;
+    background-color: lightskyblue;
+    padding: 1em;
+    overflow-y: scroll;
+}
+
+.msg {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1em;
+}
+
+.msg > div {
+    padding: 0.5em;
+    border-radius: 0.7em;
+    background-color: lightgray;
+    min-width: 90px;
+}
+
+.mymsg {
+    justify-content: flex-start;
+    float: left;
+}
+
+.mymsg > div {
+    background-color: white;
+}
+
+/*Estilo da barra de envio de msgs */
+
+.form-msgs {
+    width: auto;
+    padding: 0.5em 1em;
+    background-color: aquamarine;
+
+    display: flex;
+    justify-content: center;
+}
+
+.form-msgs > input { 
+    outline: none;
+}
+
+#btnsend {
+    width: auto;
+    padding: 0.5em 1em;
+
+}
+
+
+/*Estilo do login*/
+
+.box-login {
+    width: 100%;
+    display: flex;
+    flex-grow: 8;
+    align-items: center;
+    justify-content: center;   
+}
+
+.form-login {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+}
+
+.form-login > input {
+    outline: none;
+    margin-top: 1em;
+}
+
+
+/*Visibilidade*/
+
+.d-none {
+    display: none;
+}
+
+/*Footer*/
+
+footer {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
