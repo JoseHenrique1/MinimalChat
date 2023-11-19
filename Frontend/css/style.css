@@ -9,7 +9,7 @@ body {
     flex-direction: column;
 }
 
-/**/
+/* Header */
 header {
     display: flex;
     justify-content: center;
@@ -25,7 +25,10 @@ header {
     flex-grow: 8;
 }
 .box-msgs {
-    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 7;
+    height: 60vh;
     width: auto;
     background-color: lightskyblue;
     padding: 1em;
@@ -42,6 +45,7 @@ header {
 .msg > div {
     padding: 0.5em;
     border-radius: 0.7em;
+    border-top-right-radius: 0em;
     background-color: lightgray;
     min-width: 90px;
 }
@@ -52,22 +56,36 @@ header {
 }
 
 .mymsg > div {
+    border-radius: 0.7em;
+    border-top-left-radius: 0em;
     background-color: white;
 }
 
 /*Estilo da barra de envio de msgs */
 
 .form-msgs {
+    flex-grow: 1;
     width: auto;
     padding: 0.5em 1em;
     background-color: aquamarine;
 
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .form-msgs > input { 
     outline: none;
+    padding: 0.7em;
+    border-radius: 0.5em;
+    border: 0.5px solid #121212;
+}
+
+.inputmsg {
+    width: 100%;
+    margin-right: 5px;
+    max-width: 700px;
+    max-height: 1em;
 }
 
 #btnsend {
@@ -91,12 +109,27 @@ header {
     padding: 1em;
     display: flex;
     flex-direction: column;
-    background-color: blue;
+    background-color: #121212;
+    color: #f2f2f2;
 }
 
 .form-login > input {
     outline: none;
+    border: none;
     margin-top: 1em;
+    padding: 1em;
+    border-radius: 0.5em;
+    font-weight: 600;
+}
+
+.btn-login {
+    background-color: lightgray;
+    transition: 0.5s 0s;
+}
+
+.btn-login:hover {
+    border: 2px solid green;
+    color: green;
 }
 
 
