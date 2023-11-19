@@ -51,7 +51,7 @@ const handleLogin = (e) => {
     boxLogin.classList.add('d-none');
     templateChat.classList.remove('d-none')
 
-    websocket = new WebSocket("ws://localhost:8080");
+    websocket = new WebSocket("wss://chat-un37.onrender.com");
     websocket.onmessage = handleReceiveMessage;
 }
 
